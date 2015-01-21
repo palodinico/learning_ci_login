@@ -25,7 +25,7 @@ class Main extends CI_Controller {
 			$this->load->view("login");
 		}
 		#echo $_POST["email"];
-		#echo $this->input->post("email");
+		echo $this->input->post("password");
 	}
 
 	public function validate_credentials()

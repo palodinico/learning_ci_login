@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2015 年 1 月 21 日 08:59
+-- 生成日時: 2015 年 1 月 21 日 09:18
 -- サーバのバージョン: 5.5.32
 -- PHP のバージョン: 5.4.19
 
@@ -49,7 +49,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- テーブルのデータのダンプ `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`) VALUES
+(1, 'test@test.com', '28f29c53b1fe589377453209f69123d2');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
